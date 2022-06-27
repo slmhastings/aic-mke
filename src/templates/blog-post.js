@@ -99,6 +99,7 @@ export const pageQuery = graphql`
       description {
         raw
       }
+      
     }
     previous: contentfulBlogPost(slug: { eq: $previousPostSlug }) {
       slug
