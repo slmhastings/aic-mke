@@ -13,11 +13,11 @@ class RootIndex extends React.Component {
 
     return (
       <Layout >
-        <Hero
+        {/* <Hero
           // image={author.heroImage.gatsbyImageData}
           // title={author.name}
           // content={author.shortBio}
-        />
+        /> */}
         <ArticlePreview posts={posts} />
       </Layout>
     )
