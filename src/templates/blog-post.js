@@ -8,7 +8,7 @@ import readingTime from 'reading-time'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
-import Tags from '../components/tags'
+// import Tags from '../components/tags'
 import * as styles from './blog-post.module.css'
 
 class BlogPostTemplate extends React.Component {
@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
         />
         <div className={styles.container}>
           <span className={styles.meta}>
-            {post.author?.name} &middot;{' '}
+            {/* {post.author?.name} &middot;{' '} */}
             <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
             {timeToRead} minute read
           </span>
@@ -44,7 +44,7 @@ class BlogPostTemplate extends React.Component {
             <div className={styles.body}>
               {post.body?.raw && renderRichText(post.body)}
             </div>
-            <Tags tags={post.tags} />
+            {/* <Tags tags={post.tags} /> */}
             {(previous || next) && (
               <nav>
                 <ul className={styles.articleNavigation}>
@@ -83,9 +83,7 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       slug
       title
-      author {
-        name
-      }
+     
       publishDate(formatString: "MMMM Do, YYYY")
       rawDate: publishDate
       heroImage {
@@ -97,7 +95,7 @@ export const pageQuery = graphql`
       body {
         raw
       }
-      tags
+      
       description {
         raw
       }
