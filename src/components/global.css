@@ -25,7 +25,10 @@ html * {
 }
 
 body {
-  background-image:src("../nabbackground.jpg");
+  background-image: url("../assets/nabbackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--text-color);
   font-family: var(--font-sans);
   font-size: 16px;
@@ -98,4 +101,26 @@ tt:after {
 pre,
 code {
   font-family: var(--font-monospace);
+}
+
+.blog-post-module--body--fmI8r {
+  position: static;
+  display: block;
+  float: left;
+  margin: 120px 42px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 16px;
+  outline: 10px, white;
+  width: 100%;
+  height: 1275px;
+  padding: 1vw;
+  overflow-wrap: initial;
+  border: 1px solid rgb(68, 68, 68);
+  background-color: rgba(255, 255, 255, 0.397);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.089),
+    rgb(195, 209, 230, 0.5)
+  );
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
