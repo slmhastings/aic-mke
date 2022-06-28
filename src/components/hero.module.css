@@ -54,6 +54,7 @@
 
   .details {
     max-width: 44rem;
+    background-color: transparent;
     padding: var(--space-3xl) var(--size-gutter) 0;
   }
 }

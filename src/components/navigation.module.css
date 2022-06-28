@@ -62,3 +62,18 @@
   display: block;
   /* background-image: ("src/assets/MilwaukeeCountyLogo.png"); */
 }
+
+.resize {
+  width: 140px;
+  height: auto;
+  position: absolute;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+.centeralign {
+  width: 0vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 145px;
+}

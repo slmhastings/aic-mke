@@ -30,7 +30,7 @@ class BlogPostTemplate extends React.Component {
           image={`http:${post.heroImage.resize.src}`}
         />
         <Hero
-          image={post.heroImage?.gatsbyImageData}
+          // image={post.heroImage?.gatsbyImageData}
           title={post.title}
           content={post.description}
         />
@@ -99,6 +99,7 @@ export const pageQuery = graphql`
       description {
         raw
       }
+ 
       
     }
     previous: contentfulBlogPost(slug: { eq: $previousPostSlug }) {
