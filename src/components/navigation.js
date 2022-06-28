@@ -1,26 +1,16 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
+import MilwaukeeCountyLogo from '../assets/MilwaukeeCountyLogo.png'
 
 import * as styles from './navigation.module.css'
 
 const Navigation = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
-    <Link to="/" className={styles.logoLink}>
-      <span className={styles.logo} />
-      <span className={styles.navigationItem}>Gatsby Starter Contentful</span>
+    <Link to="localhost:3000" >
+      {/* <span className={styles.logo} /> */}
+      {/* <span className={styles.navigationItem}>Gatsby Starter Contentful</span> */}
+      <img src={MilwaukeeCountyLogo}/>
     </Link>
-    <ul className={styles.navigation}>
-      <li className={styles.navigationItem}>
-        <Link to="/" activeClassName="active">
-          Home
-        </Link>
-      </li>
-      <li className={styles.navigationItem}>
-        <Link to="/blog/" activeClassName="active">
-          Blog
-        </Link>
-      </li>
-    </ul>
   </nav>
 )
 
