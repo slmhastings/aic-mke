@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import MilwaukeeCountyLogo from '../assets/MilwaukeeCountyLogo.png'
 
 import * as styles from './navigation.module.css'
@@ -13,7 +13,7 @@ const Navigation = () => (
         marginRight: "auto",
         paddingRight: "145px"
     }} 
-    href=" http://localhost:3000" >
+    href="javascript:history.go(-1)" >
       {/* <span className={styles.logo} /> */}
       {/* <span className={styles.navigationItem}>Gatsby Starter Contentful</span> */}
       <img style={{
