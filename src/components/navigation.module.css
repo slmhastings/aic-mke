@@ -77,3 +77,9 @@
   margin-right: auto;
   padding-right: 145px;
 }
+
+.backbutton {
+  font-family: Univers;
+  color: white;
+  padding-left: 40px;
+}
