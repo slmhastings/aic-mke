@@ -6,6 +6,7 @@ import * as styles from './navigation.module.css'
 
 const Navigation = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
+    <div className='backbutton'> <a href="javascript:history.back()">Return</a></div>
     <a style={{
         
         width: "0vw",
